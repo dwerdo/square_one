@@ -10,7 +10,7 @@ angular.module('myApp', ['ngAnimate-animate.css']).controller('fullNameCtrl', fu
     $scope.editName = function() {
         angular.element('.container').removeClass('dn-flip-x');
         $scope.editable = true;
-        $scope.submitText = 'save';
+        $scope.submitText = 'SAVE';
         $timeout(function() {
             angular.element('#nameInput').focus();
         }, 0);
@@ -21,7 +21,7 @@ angular.module('myApp', ['ngAnimate-animate.css']).controller('fullNameCtrl', fu
     $scope.acceptChanges = function() {
         if ($scope.nameForm.$valid) {
             $scope.editable = false;
-            $scope.submitText = 'edit';
+            $scope.submitText = 'EDIT';
             $rootScope.dn_flip_x = true;
         }
     }   

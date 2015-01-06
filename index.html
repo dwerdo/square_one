@@ -13,12 +13,19 @@
                 <div class="form-group">
                     <label>Name: </label>
                     <span   class="nameSpan" ng-hide="editable" ng-init="data.fullName='Ed Huang'" ng-dblclick="editName()"> {{ data.fullName }}</span>
-                    <input  class="form-control" id="nameInput"  ng-show="editable" type="text" ng-model="data.fullName" ng-blur="acceptChanges()" placeholder="Enter Name" required>
-                    <input class="submitBtn btn btn-default" type="submit" value="{{ submitText }}"  ng-init="submitText='edit'">
+                    <input  class="form-control" id="nameInput"  ng-show="editable" type="text" ng-model="data.fullName" ng-blur="acceptChangess()" placeholder="Enter Name" maxLength="25" required>
+                    <input class="submitBtn btn btn-default" type="submit" value="{{ submitText }}"  ng-init="submitText='EDIT'">
                 </div>
             </form>
         </div>
+        <div class="text-left">
+            <ul>
+                <li>Double Click to edit</li>
+                <li>Or use the edit button</li>
+            </ul>
+        </div>
     </div>
+    
     
     <script src="./bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
     <script src="./bower_components/angular/angular.min.js" type="text/javascript"></script>
