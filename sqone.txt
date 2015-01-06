@@ -1,0 +1,11 @@
+1.	Using the jquery library (http://code.jquery.com/jquery-latest.min.js )and the module design pattern, build the above screens.  Create the ajax stubs where necessary. 
+2.	Start with screen 1. When you click “Edit”, you should display screen 2.  
+3.	When you change the value in screen2 and click “Save”, display screen 1 with the name updated.
+4.	You can build this whichever way you feel is best.  You could either load both screens into the dom and show/hide them, or you can use javascript templating and JSON to display each screen.  
+5.	Put rounded corners around the form.
+6.	Button should have a gradient, drop shadow and rounded corners
+7.	Extra credit if you use the Module pattern for your javascript
+8.	Extra credit for cool animation effects.
+9.	Extra credit for form validation.
+
+S1 Network password: UvPOe459AS131
