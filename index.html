@@ -13,7 +13,7 @@
                 <div class="form-group">
                     <label>Name: </label>
                     <span   class="nameSpan" ng-hide="editable" ng-init="data.fullName='Ed Huang'" ng-dblclick="editName()" ng-cloak> {{ data.fullName }}</span>
-                    <input  class="form-control" id="nameInput"  ng-show="editable" type="text" ng-model="data.fullName" ng-blur="acceptChangess()" placeholder="Enter Name" maxLength="25" required>
+                    <input  class="form-control" id="nameInput"  ng-show="editable" type="text" ng-model="data.fullName" ng-blur="acceptChangess()" placeholder="Enter Name" maxLength="25" ng-cloak required>
                     <input class="submitBtn btn btn-default" type="submit" value="{{ submitText }}"  ng-init="submitText='EDIT'">
                 </div>
             </form>
